@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Portfolio | Home</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+
+	<body>
+    	<div id="container">
+        <div id="left">
+        <div id="logo"><a href="home.html"><img class="click" src="Images/logo.png"/></a></div>
+        <div id="side">
+        <p class="links">
+        <a href="home.html"><font color="#666666">HOME</font></a><br/>
+        <a href="sem1.html">SEMESTER 1</a><br/>
+        <a href="sem2.html">SEMESTER 2</a><br/>
+        <a href="about.html">ABOUT</a><br/>
+        <br/>
+        <br/>
+        <br/>
+       	</p> 
+      	<p class="name">Carl Grech | Portfolio</p>
+        
+        </div>
+       	</div>
+        <div id="images">
+        <script type="text/javascript" 
+   src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js"></script>
+<script type="text/javascript" 
+   src="https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js?
+   load=effects"></script>
+ 
+ <script type="text/javascript">
+
+  function ShowEffect(element){
+       new Effect.Appear(element, 
+       {duration:1, from:0, to:1.0});
+   }
+    function FadeEffect(element){
+       new Effect.Fade(element,
+       {duration:1, from:1.0, to:0});
+   }
+   
+var i = 0;
+var path = new Array();
+ 
+// LIST OF IMAGES
+path[0] = "Images/panos/home.jpg";
+path[1] = "Images/stools/home.jpg";
+path[2] = "Images/mdina/home2.jpg";
+path[2] = "Images/trees/home3.jpg";
+function swapImage_0()
+{
+   document.slide.src = path[i];
+   if(i < path.length - 1) i++; else i = 0;
+ 
+ setTimeout("FadeEffect('hideshow')",7000);
+
+setTimeout("ShowEffect('hideshow')",8000);
+
+ setTimeout("swapImage_0()",8000);
+ 
+ 
+}
+window.onload=swapImage_0;
+
+</script>
+
+
+<div id="hideshow">
+ 
+<img height="1080" name="slide" src="Images/panos/home.jpg" width="1440" />
+</div> 
+</div>
+        
+        <div id="footer"></div>
+        </div>
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+		
